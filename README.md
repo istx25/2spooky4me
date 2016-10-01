@@ -38,8 +38,12 @@ And update `call.js` with the necessary information to process the call:
 
 ```javascript
 client.makeCall({
-  to: 'your_target_number',
-  from: 'your_twilio_number',
-  url: 'http://your_ngrok_server_id.ngrok.io/voice'
+  to: 'your_target_number_here',
+  from: 'your_twilio_number_here',
+  url: 'http://your_ngrok_server_id_here.ngrok.io/voice'
 });
 ```
+
+# Licensing
+
+See [`LICENSE`](LICENSE) for more details.
