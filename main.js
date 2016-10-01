@@ -2,8 +2,14 @@
 
 var express = require('express');
 var twilio = require('twilio');
+var path = require('path');
 
 let app = express();
+
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
+
 app.post('/voice', (req, res) => {
 
   let fileUrl = 'https://dl.dropboxusercontent.com/u/162794740/hacktoberfest/2spooky4me.mp3';
