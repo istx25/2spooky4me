@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/istx25/2spooky4me/issues"
   },
-  "homepage": "https://github.com/istx25/2spooky4me#readme"
+  "homepage": "https://github.com/istx25/2spooky4me#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "twilio": "^2.11.0"
+  }
 }
