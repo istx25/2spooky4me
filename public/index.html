@@ -1,33 +1,37 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>2spooky4me</title>
   <meta name="description" content="A spooky Twilio app that will scare you to bits">
   <meta name="author" content="Willow Bellemore">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-
 <body>
-  <form class="pure-form pure-form-stacked">
-    <fieldset>
-        <legend>This page is 2spooky4me.</legend>
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 20%">
 
-        <label for="twilio_number">Twilio Number</label>
-        <input id="twilio_number" type="text" placeholder="+4922289674542">
+        <h4>2spooky4me</h4>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
 
-        <label for="recipient_number">Recipient's Number</label>
-        <input id="recipient_number" type="text" placeholder="+4916095632678">
-
-        <label for="instructions" class="pure-checkbox">
-            <input id="instructions" type="checkbox"> I have read and completed what's asked in the instructions
-        </label>
-
-        <button type="submit" class="pure-button pure-button-primary">Spook!</button>
-    </fieldset>
-  </form>
-
+        <form>
+          <div class="row">
+            <label for="twilioPhoneNumber">Your Twilio Phone Number</label>
+            <input class="u-full-width" type="text" placeholder="+4922289674542" id="twilioPhoneNumber">
+            <label for="recipientPhoneNumber">Your Recipient's Phone Number</label>
+            <input class="u-full-width" type="text" placeholder="+4916095632678" id="recipientPhoneNumber">
+          </label>
+          <input class="button-primary" type="submit" value="Call">
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -2,7 +2,7 @@
   "name": "2spooky4me",
   "version": "1.0.0",
   "description": "A spooky Twilio app that will scare you to bits",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
