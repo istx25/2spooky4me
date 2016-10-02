@@ -1,10 +1,14 @@
 'use strict';
 
-var twilio = require('twilio');
-let client = twilio();
+var twilio = require('twilio')
+let client = twilio()
 
-client.makeCall({
-  to: '+4916095632678',
-  from: '+4922289674542',
-  url: 'http://8372a2fb.ngrok.io/voice'
-});
+module.exports = {
+  callTwilio: function callTwilio(twilio, recipient) {
+    client.makeCall({
+      to: recipient,
+      from: twilio,
+      url: 'http://8372a2fb.ngrok.io/voice'
+    })
+  }
+}
