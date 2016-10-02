@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/istx25/2spooky4me#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "twilio": "^2.11.0"
   }
