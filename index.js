@@ -7,7 +7,6 @@ var call = require('./call.js')
 
 var twilio = require('twilio')
 var client = new twilio.RestClient(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN)
-var twiml = twilio.TwimlResponse();
 
 let app = express()
 app.use(express.static('public'))
