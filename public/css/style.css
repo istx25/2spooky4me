@@ -32,12 +32,13 @@ button-primary {
 }
 
 #recipient-text-field {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .button {
   background-color: #B2570E !important;
   border-color: #B2570E !important;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .button:hover {
