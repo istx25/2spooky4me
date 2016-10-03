@@ -23,6 +23,7 @@ $ npm install && node index.js
 - [FreeFavicon](http://www.freefavicon.com) for the cute [Pumpkin](http://www.freefavicon.com/freefavicons/food/iconinfo/pumpkin-152-242063.html) icon.
 - [Hacktoberfest](https://hacktoberfest.digitalocean.com) for the colour scheme (and giving me the motivation to build this).
 - The [Playing tunes over the phone with Twilio Node.js](https://www.twilio.com/blog/2015/08/playing-tunes-over-the-phone-with-the-twilio-nodejs-library-in-es6.html) guide from [Twilio](https://www.twilio.com).
+- The [Spooky Scary Skeletons](https://www.youtube.com/watch?v=wxBO6KX9qTA) soundtrack.
 
 # Licensing
 
