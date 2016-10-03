@@ -2,47 +2,35 @@
 
 A spooky [Twilio](https://www.twilio.com) app that will scare you to bits. Made for Hacktoberfest.
 
+[Give it a whirl.](https://two-spooky-four-me.herokuapp.com)
+
 ## Development
 
 Clone, install dependencies, run.
 
 ```bash
-# Clone repository and install babel (globally)
-$ git clone https://github.com/istx25/2spooky4me
-$ npm install --global babel-cli
-$ cd 2spooky4me/
-
-# Install the dependencies from our package.json
-$ npm install
-
-# Start a server with babel
-$ babel-node main.js
-
-# Post a request to `/voice` for testing
-$ curl -X POST http://localhost:5794/voice
-
-# Link babel-node server to ngrok
-$ ngrok http 5794
+$ git clone https://github.com/istx25/2spooky4me && cd 2spooky4me/
+$ npm install && node index.js
 ```
 
-## Calling
-
-Check out [this awesome guide](https://www.twilio.com/blog/2015/08/playing-tunes-over-the-phone-with-the-twilio-nodejs-library-in-es6.html) for instructions on how to setup Twilio. It was the basis for this code! Once everything is configured in the Twilio console, set your environment variables in terminal:
-
-```bash
-$ export TWILIO_ACCOUNT_SID='your_account_sid_here'
-$ export TWILIO_AUTH_TOKEN='your_auth_token_here'
-```
-
-And update `call.js` with the necessary information to process the call:
+In `call.js` update the `url` parameter in the `client.makeCall` function.
 
 ```javascript
 client.makeCall({
-  to: 'your_target_number_here',
-  from: 'your_twilio_number_here',
-  url: 'http://your_ngrok_server_id_here.ngrok.io/voice'
-});
+  to: recipient,
+  from: twilio,
+  url: 'https://your_server_url_goes_here/voice'
+})
 ```
+
+## Acknowledgements
+
+- Thank you [@slapresta](https://github.com/slapresta), [@soops](https://github.com/soops), [@brennanMKE](https://github.com/brennanMKE) and [@jakecraige](https://github.com/jakecraige) for help along the way. 
+- The [Gloria Hallelujah](https://fonts.google.com/specimen/Gloria+Hallelujah) font for making the `<h4>` tag look spooky.
+- [Skeleton](http://getskeleton.com) for the HTML form.
+- [FreeFavicon](http://www.freefavicon.com) for the cute [Pumpkin](http://www.freefavicon.com/freefavicons/food/iconinfo/pumpkin-152-242063.html) icon.
+- [Hacktoberfest](https://hacktoberfest.digitalocean.com) for the colour scheme (and giving me the motivation to build this).
+- The [Playing tunes over the phone with Twilio Node.js](https://www.twilio.com/blog/2015/08/playing-tunes-over-the-phone-with-the-twilio-nodejs-library-in-es6.html) guide from [Twilio](https://www.twilio.com).
 
 # Licensing
 
