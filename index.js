@@ -17,7 +17,7 @@ app.get('/', function(req, res) {
 app.post('/voice', (req, res) => {
 
   let fileUrl = 'https://dl.dropboxusercontent.com/u/162794740/hacktoberfest/2spooky4me.mp3'
-  let twiml = new twilio.TwimlResponse()
+  let twiml = twilio.TwimlResponse()
   twiml.play(fileUrl)
 
   res.header('Content-Type', 'text/xml')
