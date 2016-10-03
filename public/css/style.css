@@ -23,10 +23,6 @@ a:hover {
   color: #763306;
 }
 
-button-primary {
-  background-color: #B2570E;
-}
-
 .text-field:focus {
   border-color: #B2570E !important;
 }
