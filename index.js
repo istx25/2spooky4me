@@ -2,9 +2,9 @@
 
 var bodyParser = require('body-parser')
 var express = require('express')
-var twilio = require('twilio')
 var path = require('path')
 var call = require('./call.js')
+var twilio = require('twilio')
 
 let app = express()
 app.use(express.static('public'))
@@ -30,6 +30,6 @@ app.post('/form', (req, res) => {
   res.redirect('/')
 })
 
-app.listen(5794, () => {
-  console.log('Listening at http://localhost:5794')
+app.listen(process.env.PORT, () => {
+  console.log('Listening on *:' + process.env.PORT)
 })

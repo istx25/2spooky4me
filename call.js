@@ -8,7 +8,7 @@ module.exports = {
     client.makeCall({
       to: recipient,
       from: twilio,
-      url: 'http://8372a2fb.ngrok.io/voice'
+      url: 'https://two-spooky-four-me.herokuapp.com/voice'
     })
   }
 }
