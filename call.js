@@ -8,7 +8,7 @@ module.exports = {
     client.makeCall({
       to: recipient,
       from: twilio,
-      url: 'https://two-spooky-four-me.herokuapp.com/voice'
+      url: process.env.HEROKU_SERVER_URL + '/voice'
     })
   }
 }
