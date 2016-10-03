@@ -23,7 +23,7 @@ client.makeCall({
 })
 ```
 
-## Acknowledgements
+# Acknowledgements
 
 - Thank you [@slapresta](https://github.com/slapresta), [@soops](https://github.com/soops), [@brennanMKE](https://github.com/brennanMKE) and [@jakecraige](https://github.com/jakecraige) for help along the way. 
 - The [Gloria Hallelujah](https://fonts.google.com/specimen/Gloria+Hallelujah) font for making the `<h4>` tag look spooky.
