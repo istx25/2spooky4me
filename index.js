@@ -2,7 +2,7 @@
 
 var bodyParser = require('body-parser')
 var express = require('express')
-var twilio = require('twilio')
+var twilio = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN)
 var path = require('path')
 var call = require('./call.js')
 
@@ -31,5 +31,5 @@ app.post('/form', (req, res) => {
 })
 
 app.listen(process.env.PORT, () => {
-  console.log('Listening at port 5794')
+  console.log('Listening on *:' + process.env.PORT)
 })
