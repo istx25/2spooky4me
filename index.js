@@ -30,6 +30,6 @@ app.post('/form', (req, res) => {
   res.redirect('/')
 })
 
-app.listen(5794, () => {
-  console.log('Listening at http://localhost:5794')
+app.listen(process.env.PORT, () => {
+  console.log('Listening at port 5794')
 })
