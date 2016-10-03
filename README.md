@@ -13,7 +13,7 @@ $ git clone https://github.com/istx25/2spooky4me && cd 2spooky4me/
 $ npm install && node index.js
 ```
 
-In `call.js` update the `url` parameter in the `client.makeCall` function.
+In `call.js`, update the `url` parameter in the `client.makeCall` function.
 
 ```javascript
 client.makeCall({
