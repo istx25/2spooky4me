@@ -2,9 +2,11 @@
 
 var bodyParser = require('body-parser')
 var express = require('express')
-var twilio = require('twilio')
 var path = require('path')
 var call = require('./call.js')
+
+var twilio = require('twilio')
+var client = new twilio.RestClient(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN)
 
 let app = express()
 app.use(express.static('public'))
@@ -17,7 +19,7 @@ app.get('/', function(req, res) {
 app.post('/voice', (req, res) => {
 
   let fileUrl = 'https://dl.dropboxusercontent.com/u/162794740/hacktoberfest/2spooky4me.mp3'
-  let twiml = new twilio.TwimlResponse()
+  let twiml = client.TwimlResponse()
   twiml.play(fileUrl)
 
   res.header('Content-Type', 'text/xml')
@@ -30,6 +32,6 @@ app.post('/form', (req, res) => {
   res.redirect('/')
 })
 
-app.listen(5794, () => {
-  console.log('Listening at http://localhost:5794')
+app.listen(process.env.PORT, () => {
+  console.log('Listening on *:' + process.env.PORT)
 })
