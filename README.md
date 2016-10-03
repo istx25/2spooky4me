@@ -9,7 +9,7 @@ Clone, install dependencies, run.
 ```bash
 # Clone repository and install babel (globally)
 $ git clone https://github.com/istx25/2spooky4me
-$ npm install --global babel
+$ npm install --global babel-cli
 $ cd 2spooky4me/
 
 # Install the dependencies from our package.json
