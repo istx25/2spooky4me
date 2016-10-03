@@ -1,6 +1,8 @@
 # 2spooky4me
 
-A spooky [Twilio](https://www.twilio.com) app that will scare you to bits. Made for Hacktoberfest.
+A spooky [Twilio](https://www.twilio.com) app that will scare you to bits. Made during [Hacktoberfest 2016](https://hacktoberfest.digitalocean.com).
+
+![dancing-skeletons](http://media3.giphy.com/media/QYMemaaLmKhBS/giphy.gif)
 
 [Give it a whirl.](https://two-spooky-four-me.herokuapp.com)
 
