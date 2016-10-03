@@ -1,8 +1,8 @@
 {
   "name": "2spooky4me",
   "version": "1.0.0",
-  "description": "A spooky Twilio app that I made during Hacktoberfest",
-  "main": "main.js",
+  "description": "A spooky Twilio app that will scare you to bits",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,12 +15,13 @@
     "hacktoberfest"
   ],
   "author": "Willow Bellemore",
-  "license": "ISC",
+  "license": "Unlicense",
   "bugs": {
     "url": "https://github.com/istx25/2spooky4me/issues"
   },
   "homepage": "https://github.com/istx25/2spooky4me#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "twilio": "^2.11.0"
   }
