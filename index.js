@@ -6,6 +6,7 @@ var path = require('path')
 var call = require('./call.js')
 
 var client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN)
+
 let app = express()
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -16,10 +17,8 @@ app.get('/', function(req, res) {
 
 app.post('/voice', (req, res) => {
 
-  console.log('client client ###' + client)
-
   let fileUrl = 'https://dl.dropboxusercontent.com/u/162794740/hacktoberfest/2spooky4me.mp3'
-  let twiml = new client.TwimlResponse()
+  let twiml = client.TwimlResponse()
   twiml.play(fileUrl)
 
   res.header('Content-Type', 'text/xml')
