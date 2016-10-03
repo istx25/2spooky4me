@@ -15,16 +15,6 @@ $ git clone https://github.com/istx25/2spooky4me && cd 2spooky4me/
 $ npm install && node index.js
 ```
 
-In `call.js`, update the `url` parameter in the `client.makeCall` function.
-
-```javascript
-client.makeCall({
-  to: recipient,
-  from: twilio,
-  url: 'https://your_server_url_goes_here/voice'
-})
-```
-
 # Acknowledgements
 
 - Thank you [@slapresta](https://github.com/slapresta), [@soops](https://github.com/soops), [@brennanMKE](https://github.com/brennanMKE) and [@jakecraige](https://github.com/jakecraige) for help along the way. 
