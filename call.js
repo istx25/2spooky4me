@@ -1,6 +1,6 @@
 'use strict';
 
-var twilio = require('twilio')
+var twilio = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN)
 let client = twilio()
 
 module.exports = {
