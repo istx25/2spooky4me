@@ -25,6 +25,6 @@ $ npm install && node index.js
 - The [Playing tunes over the phone with Twilio Node.js](https://www.twilio.com/blog/2015/08/playing-tunes-over-the-phone-with-the-twilio-nodejs-library-in-es6.html) guide from [Twilio](https://www.twilio.com).
 - The [Spooky Scary Skeletons](https://www.youtube.com/watch?v=wxBO6KX9qTA) soundtrack.
 
-# Licensing
+# License
 
-See [`LICENSE`](LICENSE) for more details.
+This project is released under the Unlicense license. See [`LICENSE`](LICENSE) for more information.
