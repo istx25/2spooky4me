@@ -6,5 +6,5 @@ module.exports = (req, res) => {
   let audioResponse = new VoiceResponse();
   audioResponse.play(fileUrl);
   res.set("Content-Type", "text/xml");
-  res.send(audioResponse.toString());
+  res.status(200).send(audioResponse.toString());
 };
