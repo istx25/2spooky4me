@@ -5,6 +5,7 @@ module.exports = (req, res) => {
   let fileUrl = "https://api.twilio.com/cowbell.mp3";
   let audioResponse = new VoiceResponse();
   audioResponse.play(fileUrl);
+  res.status(200);
   res.set("Content-Type", "text/xml");
-  res.status(200).send(audioResponse.toString());
+  res.send(audioResponse.toString());
 };
