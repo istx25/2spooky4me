@@ -1,18 +1,16 @@
-## 2spooky4me
+## Musical Skeletons
 
 A spooky [Twilio](https://www.twilio.com) app that will scare you to bits. Made during [Hacktoberfest 2016](https://hacktoberfest.digitalocean.com).
 
 ![dancing-skeletons](http://media3.giphy.com/media/QYMemaaLmKhBS/giphy.gif)
-
-[Give it a whirl.](https://two-spooky-four-me.herokuapp.com)
 
 ## Development
 
 Clone, install dependencies, run.
 
 ```bash
-$ git clone https://github.com/istx25/2spooky4me && cd 2spooky4me/
-$ npm install && node index.js
+$ git clone https://github.com/non-binary/musical-skeletons && cd musical-skeletons/
+$ TBD
 ```
 
 ## Acknowledgements
@@ -29,6 +27,3 @@ $ npm install && node index.js
 
 Please create an issue with a description of your problem or open a pull request with a fix.
 
-## License
-
-MIT License. See [`LICENSE.txt`](LICENSE.txt) for more information.
