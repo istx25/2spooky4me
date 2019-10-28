@@ -6,9 +6,6 @@
     "type": "git",
     "url": "git+https://github.com/istx25/2spooky4me.git"
   },
-  "scripts": {
-    "build": "npm install"
-  },
   "author": "Luna Graysen",
   "dependencies": {
     "twilio": "^2.11.0"
