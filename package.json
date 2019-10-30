@@ -1,29 +1,13 @@
 {
-  "name": "2spooky4me",
-  "version": "2.0.0",
+  "name": "musical-skeletons",
+  "version": "1.0.0",
   "description": "A spooky Twilio app that will scare you to bits",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/istx25/2spooky4me.git"
+    "url": "git+https://github.com/non-binary/musical-skeletons.git"
   },
-  "keywords": [
-    "twilio",
-    "hacktoberfest"
-  ],
-  "author": "Willow Bellemore",
-  "license": "Unlicense",
-  "bugs": {
-    "url": "https://github.com/istx25/2spooky4me/issues"
-  },
-  "homepage": "https://github.com/istx25/2spooky4me#readme",
+  "author": "Luna Graysen",
   "dependencies": {
-    "babel-cli": "^6.16.0",
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
     "twilio": "^2.11.0"
   }
 }
